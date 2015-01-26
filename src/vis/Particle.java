@@ -52,8 +52,8 @@ public class Particle {
 
     public void updateLocation() {
         vel.add(accel);
-        if (vel.mag() > 1)
-            vel.mult(1/vel.mag());
+        if (vel.mag() > 10)
+            vel.mult(10/vel.mag());
         loc.add(vel);
     }
 
